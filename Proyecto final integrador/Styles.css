@@ -1,0 +1,262 @@
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+
+nav ul li a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0; 
+    padding: 0; 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+    background-color: #f5f5f5; 
+}
+
+
+.header-background {
+    text-align: center; 
+}
+
+.header-logo {
+    width: 100px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+a{
+    text-decoration: none;
+}
+
+nav {
+    background-color: #fcfdfd; 
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+
+.nav_inicio {
+    display: flex; 
+    align-items: center; 
+}
+
+.Logo {
+    max-width: 100px; 
+    margin-right: 10px; 
+    
+}
+
+.Titulo {
+    color: rgb(107, 240, 174); 
+    font-size: 24px; 
+    margin: 0; 
+}
+
+
+.iconos a {
+    margin-right: 15px; 
+}
+
+
+.carousel {
+    margin-top: 20px; 
+}
+
+.carousel-item img {
+    height: 600px; 
+    object-fit: cover; 
+}
+
+
+.main_subtitulo {
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+
+.main_cards {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.card {
+    margin: 10px; 
+}
+
+.reviews {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.reviews-title {
+    font-size: 24px;
+    color: #0b0a0a;
+    margin-bottom: 20px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.review {
+    background-color: #ffc875;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+    font-size: 16px;
+    color: #565555;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-size: 14px;
+    font-style: italic;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .reviews-title {
+        font-size: 20px;
+    }
+
+    .review-text {
+        font-size: 14px;
+    }
+
+    .review-author {
+        font-size: 12px;
+    }
+}
+
+footer {
+    padding: 20px; 
+    background-color: #ffd46c; 
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+footer a {
+    text-decoration: none; 
+    color: #0c0c0c; 
+    font-size: 18px; 
+}
+
+footer form {
+    margin-top: 30px; 
+}
+
+footer form h1 {
+    font-size: 20px; 
+}
+
+footer input, footer textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #002c6e; 
+    border-radius: 5px; 
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #006587;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+footer button:hover {
+    background-color: #00aba5; 
+}
+
+
+footer .RSocial {
+    width: 40px; 
+    margin: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    
+    .Logo {
+        max-width: 60px;
+    }
+    
+    .main_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 80%; 
+    }
+   
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    .Logo {
+        max-width: 20px;
+    }
+    
+    .card {
+        width: 90%; 
+    }
+    
+    .carousel-item img {
+        height: 200px;
+    }
+    
+    .Titulo {
+        font-size: 300px;
+    }
+    
+    footer form h1, footer h1 {
+        font-size: 20px;
+    }
+  
+    footer a {
+        font-size: 16px;
+    }
+}
